@@ -5,8 +5,10 @@ module.exports = {
 		"es6": true,
 		"jest": true
 	},
+	"parser": "@babel/eslint-parser",
 	"extends": [
-		"eslint:recommended"
+		"eslint:recommended",
+		"plugin:react/recommended"
 	],
 	"globals": {
 		"Atomics": "readonly",
@@ -30,8 +32,8 @@ module.exports = {
 			"double"
 		],
 		"semi": [
-			"error",
-			"always"
+			"warn",
+			"never"
 		]
 	}
 };
