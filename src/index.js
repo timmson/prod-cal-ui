@@ -1,58 +1,35 @@
-import "bootstrap"
-import "./index.scss"
-//import  "./index1"
-
-import Calendar from "prod-cal"
-
-import Vue from "vue"
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./app"
 import Moment from "moment"
-import GenerateYear from "./generate-year"
-
-const telegramShareUrl = "https://t.me/share/url"
 
 const params = new URL(window.location.href).searchParams
 const currentYear = parseInt(Moment().format("YYYY"))
 const request = {
 	year: params.get("year") || currentYear,
-	month: params.get("month") || parseInt(Moment().format("M"))
+	month: params.get("month") || Moment().format("M")
 }
 
-new Vue({
-	el: "#app",
-	data: {
-		currentYear: currentYear,
-		shareUrl: "",
-		request: request,
-		calendar: new Calendar("ru"),
-		year: {}
-	},
-	methods: {
-		decreaseYear: function () {
-			this.request.year--
-			this.buildCalendar()
-			this.updateUrl()
-		},
-		increaseYear: function () {
-			this.request.year++
-			this.buildCalendar()
-			this.updateUrl()
-		},
-		buildCalendar: function () {
-			this.year = GenerateYear(this.request.year)
-		},
-		selectMonth(month) {
-			this.request.month = month
-			this.updateUrl()
-		},
-		updateUrl() {
-			params.set("year", this.request.year)
-			params.set("month", this.request.month)
-			window.history.replaceState({}, "Production Calendar", "?" + params.toString())
-			this.shareUrl = `${telegramShareUrl}?url=${encodeURIComponent(window.location.href)}`
-		}
-	},
-	mounted() {
-		this.buildCalendar()
-		this.updateUrl()
-	}
-})
+const notify = (state) => {
+	params.set("year", state.year)
+	params.set("month", state.month)
+	window.history.replaceState({}, "Production Calendar", "?" + params.toString())
+}
+
+const shareUrl = () => {
+	window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}`, "blank")
+}
+
+ReactDOM.render(
+	<>
+		<App request={request} notify={notify}/>
+		<div className="row mt-5">
+			<div className="col-sm-7">&nbsp;</div>
+			<div className="col-sm-4">
+				<a href="#" target="_blank" onClick={() => shareUrl()}>[Share via TG]</a>
+				<p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> - Designed by timmson</p>
+			</div>
+			<div className="col-sm-1">&nbsp;</div>
+		</div>
+	</>,
+	document.getElementById("app"))
