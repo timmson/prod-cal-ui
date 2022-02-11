@@ -1,15 +1,17 @@
-import React from "react"
+import React, {useContext} from "react"
 import PropTypes from "prop-types"
+import {CHANGE_MONTH} from "./actions"
+import Context from "./context"
 import Week from "./week"
 
-function selectMonth(number) {
-	console.log(number)
-}
-
 export default function Month(props) {
+
+	const dispatch = useContext(Context)
+	const setFocus = () =>  dispatch({type: CHANGE_MONTH, value: props.month.number})
+
 	return (
 		<div className="col float-right mt-4">
-			<table className={`calendar ${props.isSelected ? "calendar-focused" : ""}`} onClick={() => selectMonth(props.month.number)}>
+			<table className={`calendar ${props.isSelected ? "calendar-focused" : ""}`} onClick={setFocus}>
 				<thead>
 					<tr>
 						<td className="month"
