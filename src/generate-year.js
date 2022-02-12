@@ -1,49 +1,65 @@
 import Moment from "moment"
-import Calendar from "prod-cal"
-
+import _ from "lodash"
+import Calendar, {DAY_HOLIDAY, DAY_WORK_REDUCED, DAY_WORK} from "prod-cal"
 const calendar = new Calendar("ru")
 
+const DAYS_IN_WEEK = 7
+const WEEKS_IN_MONTH = 6
+const HOURS_IN_REDUCED_DAY = 7
+const HOURS_IN_STANDARD_DAY = 8
+
+const addDays = (moment, days) => moment.add(days, "d")
+const formatToDay = (moment) => moment.format("D")
+const startOfMonth = (moment) => moment.startOf("month")
+const addDaysAndFormatToDay = (moment, days) => formatToDay(addDays(moment, days))
+
+const calculateWorkingDaysAndHoursInMonth = (m) => {
+	const summary  = _.countBy(m)
+	return {
+		days: m.length - summary[DAY_HOLIDAY],
+		hours: summary[DAY_WORK] * HOURS_IN_STANDARD_DAY + (summary[DAY_WORK_REDUCED] || 0) * HOURS_IN_REDUCED_DAY
+	}
+}
+
+const generateDay = (momentMonth, cDay, m) => {
+	if (cDay >= 0 && cDay < m.length) {
+		return {
+			date: cDay + 1,
+			type: m[cDay]
+		}
+	} else {
+		return {
+			date: (cDay < 0) ?
+				addDaysAndFormatToDay(startOfMonth(momentMonth), cDay) :
+				addDaysAndFormatToDay(momentMonth.endOf("month"), cDay - m.length + 1),
+			type: "inactive"
+		}
+	}
+}
+
+const generateWeek = (momentMonth, monthStartsInDayOfWeek, i, m) => {
+	const daysFromStartOfTheMonth = i * DAYS_IN_WEEK - monthStartsInDayOfWeek
+	return {
+		number: addDays(startOfMonth(momentMonth.clone()), daysFromStartOfTheMonth).week(),
+		days: Array.from(Array(DAYS_IN_WEEK).keys()).map(
+			(j) => generateDay(momentMonth.clone(), daysFromStartOfTheMonth + j, m)
+		)
+	}
+}
+
+const generateMonth = (year, index, m) => {
+	const momentMonth = Moment([year, index])
+	const monthStartsInDayOfWeek = startOfMonth(momentMonth.clone()).format("d") - 1
+	return {
+		number: momentMonth.format("M"),
+		name: momentMonth.format("MMMM"),
+		working: calculateWorkingDaysAndHoursInMonth(m),
+		weeks: Array.from(Array(WEEKS_IN_MONTH).keys()).map(
+			(i) => generateWeek(momentMonth, monthStartsInDayOfWeek, i, m)
+		)
+	}
+}
+
 export default function GenerateYear(year) {
-	return calendar.getCalendar(year).map((m, index) => {
-		let momentMonth = Moment([year, index])
-		let month = {
-			number: momentMonth.format("M"),
-			name: momentMonth.format("MMMM"),
-			working: {
-				days: m.filter(d => d !== "holiday").length,
-				hours: m.filter(d => d !== "holiday").reduce((last, d) => last += (d === "work_reduced" ? 7 : 8), 0)
-			},
-			weeks: [],
-		}
-		let monthStartsWith = momentMonth.clone().startOf("month").format("d") - 1
-		for (let i = 0; i < 6; i++) {
-			let days = []
-			month.weeks[i] = {
-				number: momentMonth.clone().startOf("month").add(i * 7  - monthStartsWith, "d").week()
-			}
-			for (let j = 0; j < 7; j++) {
-				let cDay = i * 7 + j - monthStartsWith
-				if (cDay >= 0 && cDay < m.length) {
-					days[j] = {
-						date: cDay + 1,
-						type: m[cDay]
-					}
-				} else {
-					if (cDay < 0) {
-						days[j] = {
-							date: momentMonth.clone().startOf("month").add(cDay, "d").format("D"),
-							type: "inactive"
-						}
-					} else {
-						days[j] = {
-							date: momentMonth.clone().endOf("month").add(cDay - m.length + 1, "d").format("D"),
-							type: "inactive"
-						}
-					}
-				}
-			}
-			month.weeks[i].days = days
-		}
-		return month
-	})
+	return calendar.getCalendar(year).map((m, index) => generateMonth(year, index, m))
 }

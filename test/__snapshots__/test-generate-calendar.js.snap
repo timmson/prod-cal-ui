@@ -1,0 +1,2502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenerateCalendar should generate production calendar of the year 1`] = `
+Array [
+  Object {
+    "name": "January",
+    "number": "1",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "28",
+            "type": "inactive",
+          },
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": "31",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "holiday",
+          },
+          Object {
+            "date": 2,
+            "type": "holiday",
+          },
+          Object {
+            "date": 3,
+            "type": "holiday",
+          },
+        ],
+        "number": 1,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+          Object {
+            "date": 8,
+            "type": "holiday",
+          },
+          Object {
+            "date": 9,
+            "type": "holiday",
+          },
+          Object {
+            "date": 10,
+            "type": "holiday",
+          },
+        ],
+        "number": 2,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "holiday",
+          },
+          Object {
+            "date": 17,
+            "type": "holiday",
+          },
+        ],
+        "number": 3,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "holiday",
+          },
+          Object {
+            "date": 24,
+            "type": "holiday",
+          },
+        ],
+        "number": 4,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "holiday",
+          },
+          Object {
+            "date": 31,
+            "type": "holiday",
+          },
+        ],
+        "number": 5,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+        ],
+        "number": 6,
+      },
+    ],
+    "working": Object {
+      "days": 15,
+      "hours": 120,
+    },
+  },
+  Object {
+    "name": "February",
+    "number": "2",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "work",
+          },
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+        ],
+        "number": 6,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "holiday",
+          },
+          Object {
+            "date": 14,
+            "type": "holiday",
+          },
+        ],
+        "number": 7,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work_reduced",
+          },
+          Object {
+            "date": 21,
+            "type": "holiday",
+          },
+        ],
+        "number": 8,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 22,
+            "type": "holiday",
+          },
+          Object {
+            "date": 23,
+            "type": "holiday",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "holiday",
+          },
+          Object {
+            "date": 28,
+            "type": "holiday",
+          },
+        ],
+        "number": 9,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+        ],
+        "number": 10,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+          Object {
+            "date": "11",
+            "type": "inactive",
+          },
+          Object {
+            "date": "12",
+            "type": "inactive",
+          },
+          Object {
+            "date": "13",
+            "type": "inactive",
+          },
+          Object {
+            "date": "14",
+            "type": "inactive",
+          },
+        ],
+        "number": 11,
+      },
+    ],
+    "working": Object {
+      "days": 19,
+      "hours": 151,
+    },
+  },
+  Object {
+    "name": "March",
+    "number": "3",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "work",
+          },
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+        ],
+        "number": 10,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 8,
+            "type": "holiday",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "holiday",
+          },
+          Object {
+            "date": 14,
+            "type": "holiday",
+          },
+        ],
+        "number": 11,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "holiday",
+          },
+          Object {
+            "date": 21,
+            "type": "holiday",
+          },
+        ],
+        "number": 12,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "holiday",
+          },
+          Object {
+            "date": 28,
+            "type": "holiday",
+          },
+        ],
+        "number": 13,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": 31,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+        ],
+        "number": 14,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+          Object {
+            "date": "11",
+            "type": "inactive",
+          },
+        ],
+        "number": 15,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 176,
+    },
+  },
+  Object {
+    "name": "April",
+    "number": "4",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": "31",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "holiday",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+        ],
+        "number": 14,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "holiday",
+          },
+          Object {
+            "date": 11,
+            "type": "holiday",
+          },
+        ],
+        "number": 15,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "holiday",
+          },
+          Object {
+            "date": 18,
+            "type": "holiday",
+          },
+        ],
+        "number": 16,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "holiday",
+          },
+          Object {
+            "date": 25,
+            "type": "holiday",
+          },
+        ],
+        "number": 17,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work_reduced",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+        ],
+        "number": 18,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+        ],
+        "number": 19,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 175,
+    },
+  },
+  Object {
+    "name": "May",
+    "number": "5",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "26",
+            "type": "inactive",
+          },
+          Object {
+            "date": "27",
+            "type": "inactive",
+          },
+          Object {
+            "date": "28",
+            "type": "inactive",
+          },
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "holiday",
+          },
+          Object {
+            "date": 2,
+            "type": "holiday",
+          },
+        ],
+        "number": 18,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 3,
+            "type": "holiday",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+          Object {
+            "date": 8,
+            "type": "holiday",
+          },
+          Object {
+            "date": 9,
+            "type": "holiday",
+          },
+        ],
+        "number": 19,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 10,
+            "type": "holiday",
+          },
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "holiday",
+          },
+          Object {
+            "date": 16,
+            "type": "holiday",
+          },
+        ],
+        "number": 20,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "holiday",
+          },
+          Object {
+            "date": 23,
+            "type": "holiday",
+          },
+        ],
+        "number": 21,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "holiday",
+          },
+          Object {
+            "date": 30,
+            "type": "holiday",
+          },
+        ],
+        "number": 22,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 31,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+        ],
+        "number": 23,
+      },
+    ],
+    "working": Object {
+      "days": 15,
+      "hours": 120,
+    },
+  },
+  Object {
+    "name": "June",
+    "number": "6",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "31",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "work",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+        ],
+        "number": 23,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "work_reduced",
+          },
+          Object {
+            "date": 12,
+            "type": "holiday",
+          },
+          Object {
+            "date": 13,
+            "type": "holiday",
+          },
+        ],
+        "number": 24,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 14,
+            "type": "holiday",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "holiday",
+          },
+          Object {
+            "date": 20,
+            "type": "holiday",
+          },
+        ],
+        "number": 25,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "holiday",
+          },
+          Object {
+            "date": 27,
+            "type": "holiday",
+          },
+        ],
+        "number": 26,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+        ],
+        "number": 27,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+          Object {
+            "date": "11",
+            "type": "inactive",
+          },
+        ],
+        "number": 28,
+      },
+    ],
+    "working": Object {
+      "days": 21,
+      "hours": 167,
+    },
+  },
+  Object {
+    "name": "July",
+    "number": "7",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "28",
+            "type": "inactive",
+          },
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "holiday",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+        ],
+        "number": 27,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "holiday",
+          },
+          Object {
+            "date": 11,
+            "type": "holiday",
+          },
+        ],
+        "number": 28,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "holiday",
+          },
+          Object {
+            "date": 18,
+            "type": "holiday",
+          },
+        ],
+        "number": 29,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "holiday",
+          },
+          Object {
+            "date": 25,
+            "type": "holiday",
+          },
+        ],
+        "number": 30,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": 31,
+            "type": "holiday",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+        ],
+        "number": 31,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+        ],
+        "number": 32,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 176,
+    },
+  },
+  Object {
+    "name": "August",
+    "number": "8",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "work",
+          },
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+          Object {
+            "date": 8,
+            "type": "holiday",
+          },
+        ],
+        "number": 32,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "holiday",
+          },
+          Object {
+            "date": 15,
+            "type": "holiday",
+          },
+        ],
+        "number": 33,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "holiday",
+          },
+          Object {
+            "date": 22,
+            "type": "holiday",
+          },
+        ],
+        "number": 34,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "holiday",
+          },
+          Object {
+            "date": 29,
+            "type": "holiday",
+          },
+        ],
+        "number": 35,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": 31,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+        ],
+        "number": 36,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+          Object {
+            "date": "11",
+            "type": "inactive",
+          },
+          Object {
+            "date": "12",
+            "type": "inactive",
+          },
+        ],
+        "number": 37,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 176,
+    },
+  },
+  Object {
+    "name": "September",
+    "number": "9",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": "31",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+        ],
+        "number": 36,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "holiday",
+          },
+          Object {
+            "date": 12,
+            "type": "holiday",
+          },
+        ],
+        "number": 37,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "holiday",
+          },
+          Object {
+            "date": 19,
+            "type": "holiday",
+          },
+        ],
+        "number": 38,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "holiday",
+          },
+          Object {
+            "date": 26,
+            "type": "holiday",
+          },
+        ],
+        "number": 39,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+        ],
+        "number": 40,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+        ],
+        "number": 41,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 176,
+    },
+  },
+  Object {
+    "name": "October",
+    "number": "10",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "27",
+            "type": "inactive",
+          },
+          Object {
+            "date": "28",
+            "type": "inactive",
+          },
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "holiday",
+          },
+          Object {
+            "date": 3,
+            "type": "holiday",
+          },
+        ],
+        "number": 40,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 4,
+            "type": "work",
+          },
+          Object {
+            "date": 5,
+            "type": "work",
+          },
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "holiday",
+          },
+          Object {
+            "date": 10,
+            "type": "holiday",
+          },
+        ],
+        "number": 41,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "holiday",
+          },
+          Object {
+            "date": 17,
+            "type": "holiday",
+          },
+        ],
+        "number": 42,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "holiday",
+          },
+          Object {
+            "date": 24,
+            "type": "holiday",
+          },
+        ],
+        "number": 43,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "holiday",
+          },
+          Object {
+            "date": 31,
+            "type": "holiday",
+          },
+        ],
+        "number": 44,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+        ],
+        "number": 45,
+      },
+    ],
+    "working": Object {
+      "days": 21,
+      "hours": 168,
+    },
+  },
+  Object {
+    "name": "November",
+    "number": "11",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work_reduced",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+          Object {
+            "date": 6,
+            "type": "holiday",
+          },
+          Object {
+            "date": 7,
+            "type": "holiday",
+          },
+        ],
+        "number": 45,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "work",
+          },
+          Object {
+            "date": 12,
+            "type": "work",
+          },
+          Object {
+            "date": 13,
+            "type": "holiday",
+          },
+          Object {
+            "date": 14,
+            "type": "holiday",
+          },
+        ],
+        "number": 46,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "work",
+          },
+          Object {
+            "date": 19,
+            "type": "work",
+          },
+          Object {
+            "date": 20,
+            "type": "holiday",
+          },
+          Object {
+            "date": 21,
+            "type": "holiday",
+          },
+        ],
+        "number": 47,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "work",
+          },
+          Object {
+            "date": 26,
+            "type": "work",
+          },
+          Object {
+            "date": 27,
+            "type": "holiday",
+          },
+          Object {
+            "date": 28,
+            "type": "holiday",
+          },
+        ],
+        "number": 48,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+        ],
+        "number": 49,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+          Object {
+            "date": "10",
+            "type": "inactive",
+          },
+          Object {
+            "date": "11",
+            "type": "inactive",
+          },
+          Object {
+            "date": "12",
+            "type": "inactive",
+          },
+        ],
+        "number": 50,
+      },
+    ],
+    "working": Object {
+      "days": 20,
+      "hours": 159,
+    },
+  },
+  Object {
+    "name": "December",
+    "number": "12",
+    "weeks": Array [
+      Object {
+        "days": Array [
+          Object {
+            "date": "29",
+            "type": "inactive",
+          },
+          Object {
+            "date": "30",
+            "type": "inactive",
+          },
+          Object {
+            "date": 1,
+            "type": "work",
+          },
+          Object {
+            "date": 2,
+            "type": "work",
+          },
+          Object {
+            "date": 3,
+            "type": "work",
+          },
+          Object {
+            "date": 4,
+            "type": "holiday",
+          },
+          Object {
+            "date": 5,
+            "type": "holiday",
+          },
+        ],
+        "number": 49,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 6,
+            "type": "work",
+          },
+          Object {
+            "date": 7,
+            "type": "work",
+          },
+          Object {
+            "date": 8,
+            "type": "work",
+          },
+          Object {
+            "date": 9,
+            "type": "work",
+          },
+          Object {
+            "date": 10,
+            "type": "work",
+          },
+          Object {
+            "date": 11,
+            "type": "holiday",
+          },
+          Object {
+            "date": 12,
+            "type": "holiday",
+          },
+        ],
+        "number": 50,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 13,
+            "type": "work",
+          },
+          Object {
+            "date": 14,
+            "type": "work",
+          },
+          Object {
+            "date": 15,
+            "type": "work",
+          },
+          Object {
+            "date": 16,
+            "type": "work",
+          },
+          Object {
+            "date": 17,
+            "type": "work",
+          },
+          Object {
+            "date": 18,
+            "type": "holiday",
+          },
+          Object {
+            "date": 19,
+            "type": "holiday",
+          },
+        ],
+        "number": 51,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 20,
+            "type": "work",
+          },
+          Object {
+            "date": 21,
+            "type": "work",
+          },
+          Object {
+            "date": 22,
+            "type": "work",
+          },
+          Object {
+            "date": 23,
+            "type": "work",
+          },
+          Object {
+            "date": 24,
+            "type": "work",
+          },
+          Object {
+            "date": 25,
+            "type": "holiday",
+          },
+          Object {
+            "date": 26,
+            "type": "holiday",
+          },
+        ],
+        "number": 52,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": 27,
+            "type": "work",
+          },
+          Object {
+            "date": 28,
+            "type": "work",
+          },
+          Object {
+            "date": 29,
+            "type": "work",
+          },
+          Object {
+            "date": 30,
+            "type": "work_reduced",
+          },
+          Object {
+            "date": 31,
+            "type": "holiday",
+          },
+          Object {
+            "date": "1",
+            "type": "inactive",
+          },
+          Object {
+            "date": "2",
+            "type": "inactive",
+          },
+        ],
+        "number": 1,
+      },
+      Object {
+        "days": Array [
+          Object {
+            "date": "3",
+            "type": "inactive",
+          },
+          Object {
+            "date": "4",
+            "type": "inactive",
+          },
+          Object {
+            "date": "5",
+            "type": "inactive",
+          },
+          Object {
+            "date": "6",
+            "type": "inactive",
+          },
+          Object {
+            "date": "7",
+            "type": "inactive",
+          },
+          Object {
+            "date": "8",
+            "type": "inactive",
+          },
+          Object {
+            "date": "9",
+            "type": "inactive",
+          },
+        ],
+        "number": 2,
+      },
+    ],
+    "working": Object {
+      "days": 22,
+      "hours": 175,
+    },
+  },
+]
+`;
