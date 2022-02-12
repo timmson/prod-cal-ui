@@ -4,22 +4,21 @@ export default function Reducer(state, action) {
 	switch (action.type) {
 	case CHANGE_MONTH: {
 		return {
-			year: state.year,
+			...state,
 			month: action.value
 		}
 	}
 
 	case CHANGE_YEAR: {
 		return {
-			year: action.value,
-			month: state.month
+			...state,
+			year: action.value
 		}
 	}
 
 	default: {
 		return {
-			year: state.year,
-			month: state.month
+			...state
 		}
 	}
 	}

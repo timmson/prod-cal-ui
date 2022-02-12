@@ -15,7 +15,7 @@ describe("Month should", () => {
 			weeks: []
 		}
 
-		const component = renderer.create(<Month month={m}/>)
+		const component = renderer.create(<Month month={m} isSelected={false}/>)
 
 		expect(component.toJSON()).toMatchSnapshot()
 		component.unmount()
