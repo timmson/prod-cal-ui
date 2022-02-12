@@ -47,8 +47,8 @@ const generateWeek = (momentMonth, monthStartsInDayOfWeek, i, m) => {
 	}
 }
 
-const generateMonth = (year, index, m) => {
-	const momentMonth = Moment([year, index])
+const generateMonth = (year, month, m) => {
+	const momentMonth = Moment([year, month])
 	const monthStartsInDayOfWeek = startOfMonth(momentMonth.clone()).format("d") - 1
 	return {
 		number: momentMonth.format("M"),
@@ -61,5 +61,5 @@ const generateMonth = (year, index, m) => {
 }
 
 export default function GenerateYear(year) {
-	return calendar.getCalendar(year).map((m, index) => generateMonth(year, index, m))
+	return calendar.getCalendar(year).map((m, month) => generateMonth(year, month, m))
 }
