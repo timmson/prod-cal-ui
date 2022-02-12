@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GenerateCalendar should generate production calendar of the year 1`] = `
+exports[`GenerateYear should generate production calendar of the year 1`] = `
 Array [
   Object {
     "name": "January",
