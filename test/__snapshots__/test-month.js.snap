@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Month should be equal to snapshot 1`] = `
+<div
+  className="col float-right mt-4"
+>
+  <table
+    className="calendar "
+    onClick={[Function]}
+  >
+    <thead>
+      <tr>
+        <td
+          className="month"
+          colSpan="8"
+        >
+          October
+          '
+          20
+           - 
+          <span>
+            [working 
+            10
+            d /
+            100
+            h]
+          </span>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="dayOfWeek"
+      >
+        <td
+          className="work"
+        >
+          #w
+        </td>
+        <td
+          className="work"
+        >
+          mo
+        </td>
+        <td
+          className="work"
+        >
+          tu
+        </td>
+        <td
+          className="work"
+        >
+          we
+        </td>
+        <td
+          className="work"
+        >
+          th
+        </td>
+        <td
+          className="work"
+        >
+          fr
+        </td>
+        <td
+          className="holiday"
+        >
+          sa
+        </td>
+        <td
+          className="holiday"
+        >
+          su
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
