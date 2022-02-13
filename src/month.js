@@ -1,4 +1,4 @@
-import React, {useContext} from "react"
+import React, {useContext, useEffect, useRef} from "react"
 import PropTypes from "prop-types"
 import {CHANGE_MONTH} from "./actions"
 import Context from "./context"
@@ -7,15 +7,19 @@ import Week from "./week"
 export default function Month(props) {
 
 	const dispatch = useContext(Context)
-	const setFocus = () =>  dispatch({type: CHANGE_MONTH, value: props.month.number})
+	const setFocus = () => dispatch({type: CHANGE_MONTH, value: props.month.number})
+	const myRef = useRef(null)
+
+	useEffect(() => props.isSelected ? myRef.current.scrollIntoView() : null, [myRef])
 
 	return (
-		<div className="col float-right mt-4">
+		<div ref={myRef} className="col float-right mt-4">
 			<table className={`calendar ${props.isSelected ? "calendar-focused" : ""}`} onClick={setFocus}>
 				<thead>
 					<tr>
-						<td className="month"
-							colSpan="8">{props.month.name} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span></td>
+						<td className="month" colSpan="8">
+							{props.month.name} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span>
+						</td>
 					</tr>
 				</thead>
 				<tbody>

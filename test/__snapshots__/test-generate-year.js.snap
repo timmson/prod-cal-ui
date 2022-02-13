@@ -4,7 +4,7 @@ exports[`GenerateYear should generate production calendar of the year 1`] = `
 Array [
   Object {
     "name": "January",
-    "number": "1",
+    "number": 1,
     "weeks": Array [
       Object {
         "days": Array [
@@ -212,7 +212,7 @@ Array [
   },
   Object {
     "name": "February",
-    "number": "2",
+    "number": 2,
     "weeks": Array [
       Object {
         "days": Array [
@@ -420,7 +420,7 @@ Array [
   },
   Object {
     "name": "March",
-    "number": "3",
+    "number": 3,
     "weeks": Array [
       Object {
         "days": Array [
@@ -628,7 +628,7 @@ Array [
   },
   Object {
     "name": "April",
-    "number": "4",
+    "number": 4,
     "weeks": Array [
       Object {
         "days": Array [
@@ -836,7 +836,7 @@ Array [
   },
   Object {
     "name": "May",
-    "number": "5",
+    "number": 5,
     "weeks": Array [
       Object {
         "days": Array [
@@ -1044,7 +1044,7 @@ Array [
   },
   Object {
     "name": "June",
-    "number": "6",
+    "number": 6,
     "weeks": Array [
       Object {
         "days": Array [
@@ -1252,7 +1252,7 @@ Array [
   },
   Object {
     "name": "July",
-    "number": "7",
+    "number": 7,
     "weeks": Array [
       Object {
         "days": Array [
@@ -1460,7 +1460,7 @@ Array [
   },
   Object {
     "name": "August",
-    "number": "8",
+    "number": 8,
     "weeks": Array [
       Object {
         "days": Array [
@@ -1668,7 +1668,7 @@ Array [
   },
   Object {
     "name": "September",
-    "number": "9",
+    "number": 9,
     "weeks": Array [
       Object {
         "days": Array [
@@ -1876,7 +1876,7 @@ Array [
   },
   Object {
     "name": "October",
-    "number": "10",
+    "number": 10,
     "weeks": Array [
       Object {
         "days": Array [
@@ -2084,7 +2084,7 @@ Array [
   },
   Object {
     "name": "November",
-    "number": "11",
+    "number": 11,
     "weeks": Array [
       Object {
         "days": Array [
@@ -2292,7 +2292,7 @@ Array [
   },
   Object {
     "name": "December",
-    "number": "12",
+    "number": 12,
     "weeks": Array [
       Object {
         "days": Array [

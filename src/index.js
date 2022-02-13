@@ -1,13 +1,18 @@
+import "bootstrap"
+import "./index.scss"
+
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./app"
 import Moment from "moment"
+import {faTelegram} from "@fortawesome/free-brands-svg-icons"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
+const currentYear = new Date().getFullYear()
 const params = new URL(window.location.href).searchParams
-const currentYear = parseInt(Moment().format("YYYY"))
 const request = {
-	year: params.get("year") || currentYear,
-	month: params.get("month") || Moment().format("M")
+	year: parseInt(params.get("year") || Moment().format("YYYY"), 10),
+	month: parseInt(params.get("month") || Moment().format("M"), 10)
 }
 
 const notify = (state) => {
@@ -24,10 +29,11 @@ ReactDOM.render(
 	<>
 		<App request={request} notify={notify}/>
 		<div className="row mt-5">
-			<div className="col-sm-7">&nbsp;</div>
-			<div className="col-sm-4">
-				<a href="#" target="_blank" onClick={() => shareUrl()}>[Share via TG]</a>
-				<p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> - Designed by timmson</p>
+			<div className="col text-end">
+				<a href="#" target="_blank" onClick={() => shareUrl()}>
+					[Share via <FontAwesomeIcon icon={faTelegram}/>]
+				</a>
+				<p className="copyright">&copy; {currentYear} timmson</p>
 			</div>
 			<div className="col-sm-1">&nbsp;</div>
 		</div>

@@ -1,18 +1,25 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-@media handheld {
-  body {
-    font-size: 1vw;
+html, body {
+  font-size: 16pt;
+  scroll-behavior: smooth;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  html, body {
+    font-size: 36pt;
   }
 }
 
-span.clickable {
+.clickable {
   cursor: pointer;
 }
 
 .calendar {
 
-  min-width: 300px;
+  border: 3px #ccc solid;
+  min-width: 400px;
+  width: 100%;
 
   tr.dayOfWeek td {
     background-color: #ccc;

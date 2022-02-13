@@ -59,7 +59,7 @@ const generateMonth = (year, month) => {
 
 
 	return {
-		number: momentMonth.format("M"),
+		number: parseInt(momentMonth.format("M"), 10),
 		name: momentMonth.format("MMMM"),
 		working: calculateWorkingDaysAndHoursInMonth(),
 		weeks: sequenceTo(WEEKS_IN_MONTH).map(
