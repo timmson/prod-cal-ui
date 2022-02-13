@@ -18,7 +18,7 @@ export default function Month(props) {
 				<thead>
 					<tr>
 						<td className="month" colSpan="8">
-							{props.month.name} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span>
+							{props.month.name}&apos;{props.year % 100} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span>
 						</td>
 					</tr>
 				</thead>
@@ -41,6 +41,7 @@ export default function Month(props) {
 }
 
 Month.propTypes = {
+	year: PropTypes.number.isRequired,
 	month: PropTypes.object.isRequired,
 	isSelected: PropTypes.bool.isRequired
 }

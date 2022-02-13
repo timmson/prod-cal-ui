@@ -26,7 +26,7 @@ export default function App(props) {
 				</div>
 			</div>
 			<div className="row ml-2">
-				{year.map((month) => <Month key={month.number} month={month} isSelected={month.number === state.month}/>)}
+				{year.map((month) => <Month key={month.number} year={props.request.year} month={month} isSelected={month.number === state.month}/>)}
 			</div>
 		</Context.Provider>
 	)
