@@ -1,6 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const outputDir = path.resolve(__dirname, "./docs")
+const outputDir = path.resolve(__dirname, "./docs");
 
 module.exports = {
     entry: "./src/index.js",
@@ -11,32 +11,33 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.jsx?$/,
+                exclude: /(node_modules)/,
+                loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-env", "@babel/preset-react"]
+                }
+            },
+            {
+                test: /\.tsx?$/,
+                exclude: /(node_modules)/,
+                loader: "ts-loader",
+            },
+            {
                 test: /\.(sa|sc|c)ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     "sass-loader"
                 ]
-            },
-            {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: [
-                            "@babel/preset-env",
-                            "@babel/preset-react"
-                        ]
-                    }
-                }
             }
         ]
     },
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"],
+    },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "index.css"
-        })
+        new MiniCssExtractPlugin({filename: "index.css"})
     ],
     devServer: {
         static: {
