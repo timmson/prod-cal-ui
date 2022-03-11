@@ -1,10 +1,9 @@
 import React from "react"
+import {DayType} from "./types"
 
 type DayProps = {
-	day: {
-		type: string
-		date: number
-	}
+    key?: number
+    day: DayType
 }
 
 const Day = (props: DayProps) => <td className={props.day.type}>{props.day.date}</td>
