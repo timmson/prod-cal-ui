@@ -1,15 +1,20 @@
 import React, {useReducer} from "react"
-import PropTypes from "prop-types"
 import {CHANGE_YEAR} from "./actions"
 import Context from "./context"
 import Reducer from "./reducer"
 import Month from "./month"
 import GenerateYear from "./generate-year"
+import {RequestType, StateType} from "./types"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faArrowAltCircleLeft, faArrowAltCircleRight} from "@fortawesome/free-regular-svg-icons"
 
-export default function App(props) {
+type AppProps = {
+    request: RequestType
+    notify: (state: StateType) => void
+}
+
+const App = (props: AppProps) => {
 
 	const [state, dispatch] = useReducer(Reducer, props.request, () => props.request)
 	const year = GenerateYear(state.year)
@@ -32,7 +37,4 @@ export default function App(props) {
 	)
 }
 
-App.propTypes = {
-	request: PropTypes.object.isRequired,
-	notify: PropTypes.func.isRequired
-}
+export default App

@@ -1,6 +1,7 @@
 import {CHANGE_MONTH, CHANGE_YEAR} from "./actions"
+import {ActionType, StateType} from "./types"
 
-export default function Reducer(state, action) {
+const Reducer = (state: StateType, action: ActionType) => {
 	switch (action.type) {
 	case CHANGE_MONTH: {
 		return {
@@ -23,3 +24,5 @@ export default function Reducer(state, action) {
 	}
 	}
 }
+
+export default Reducer

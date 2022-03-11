@@ -6,6 +6,7 @@ import Week from "./week"
 import {MonthType} from "./types"
 
 type MonthProps = {
+	key?: number
 	year: number
 	month: MonthType
 	isSelected: boolean

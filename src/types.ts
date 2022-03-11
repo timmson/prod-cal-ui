@@ -1,3 +1,18 @@
+export type ActionType = {
+    type: string
+    value?: number
+}
+
+export type StateType = {
+    month?: number
+    year?: number
+}
+
+export type RequestType = {
+    month: number
+    year: number
+}
+
 export type DayType = {
     type: string
     date: number

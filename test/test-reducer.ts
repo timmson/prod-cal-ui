@@ -1,7 +1,8 @@
 import Reducer from "../src/reducer"
 import {CHANGE_MONTH, CHANGE_YEAR} from "../src/actions"
 
-const getTestCaseDescription = (t, i) => `# ${i} - ${JSON.stringify(t.action)} when state:${JSON.stringify(t.state)} and return:${JSON.stringify(t.expected)}`
+const getTestCaseDescription = (t, i) =>
+	`# ${i} - ${JSON.stringify(t.action)} when state:${JSON.stringify(t.state)} and return:${JSON.stringify(t.expected)}`
 
 describe("Reducer should", () => {
 
