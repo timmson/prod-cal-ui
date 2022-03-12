@@ -13,6 +13,11 @@ export type RequestType = {
     year: number
 }
 
+export type WorkingType = {
+    days: number
+    hours: number
+}
+
 export type DayType = {
     type: string
     date: number
@@ -26,9 +31,6 @@ export type WeekType = {
 export type MonthType = {
     number: number
     name: string
-    working: {
-        days: number
-        hours: number
-    }
+    working: WorkingType
     weeks: Array<WeekType>
 }
