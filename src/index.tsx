@@ -3,10 +3,12 @@ import "./index.scss"
 
 import React from "react"
 import ReactDOM from "react-dom"
+
 import App from "./app"
 import Moment from "moment"
 import {faTelegram} from "@fortawesome/free-brands-svg-icons"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {StateType} from "./types"
 
 const currentYear = new Date().getFullYear()
 const params = new URL(window.location.href).searchParams
@@ -15,9 +17,9 @@ const request = {
 	month: parseInt(params.get("month") || Moment().format("M"), 10)
 }
 
-const notify = (state) => {
-	params.set("year", state.year)
-	params.set("month", state.month)
+const notify = (state: StateType) => {
+	params.set("year", state.year.toString())
+	params.set("month", state.month.toString())
 	window.history.replaceState({}, "Production Calendar", "?" + params.toString())
 }
 
@@ -31,7 +33,7 @@ ReactDOM.render(
 		<div className="row mt-5">
 			<div className="col text-end">
 				<a href="#" target="_blank" onClick={() => shareUrl()}>
-					[Share via <FontAwesomeIcon icon={faTelegram}/>]
+                    [Share via <FontAwesomeIcon icon={faTelegram}/>]
 				</a>
 				<p className="copyright">&copy; {currentYear} timmson</p>
 			</div>

@@ -1,16 +1,13 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import Week from "../src/week"
+import Day from "../src/day"
 
-describe("Week should", () => {
+describe("Day should", () => {
 
 	test("be equal to snapshot", () => {
-		const w = {
-			number: "1",
-			days: []
-		}
+		const d = {type: "type", date: 1}
 
-		const component = renderer.create(<Week week={w}/>)
+		const component = renderer.create(<Day day={d}/>)
 
 		expect(component.toJSON()).toMatchSnapshot()
 		component.unmount()

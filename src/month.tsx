@@ -1,10 +1,18 @@
 import React, {useContext, useEffect, useRef} from "react"
-import PropTypes from "prop-types"
 import {CHANGE_MONTH} from "./actions"
 import Context from "./context"
-import Week from "./week"
 
-export default function Month(props) {
+import Week from "./week"
+import {MonthType} from "./types"
+
+type MonthProps = {
+	key?: number
+	year: number
+	month: MonthType
+	isSelected: boolean
+}
+
+export default function Month(props: MonthProps) {
 
 	const dispatch = useContext(Context)
 	const setFocus = () => dispatch({type: CHANGE_MONTH, value: props.month.number})
@@ -40,8 +48,3 @@ export default function Month(props) {
 	)
 }
 
-Month.propTypes = {
-	year: PropTypes.number.isRequired,
-	month: PropTypes.object.isRequired,
-	isSelected: PropTypes.bool.isRequired
-}
