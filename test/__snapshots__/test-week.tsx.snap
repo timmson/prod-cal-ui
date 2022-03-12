@@ -7,5 +7,10 @@ exports[`Week should be equal to snapshot 1`] = `
   >
     1
   </td>
+  <td
+    className="inactive"
+  >
+    1
+  </td>
 </tr>
 `;

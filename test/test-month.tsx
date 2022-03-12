@@ -12,7 +12,12 @@ describe("Month should", () => {
 				days: 10,
 				hours: 100
 			},
-			weeks: []
+			weeks: [
+				{
+					number: 1,
+					days: []
+				}
+			]
 		}
 
 		const component = renderer.create(<Month year={2020} month={m} isSelected={false}/>)
