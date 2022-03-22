@@ -1,6 +1,6 @@
 import Moment from "moment"
 import _ from "lodash"
-import Calendar, {DAY_HOLIDAY, DAY_WORK, DAY_WORK_REDUCED} from "prod-cal"
+import Calendar from "prod-cal"
 
 import {DayType, MonthType, WeekType, WorkingType} from "./types"
 
@@ -22,15 +22,15 @@ const sequenceFromOneTo = (length: number): Array<number> => sequenceTo(length, 
 
 
 const generateMonth = (year: number, month: number): MonthType => {
-	const prodCalendar = calendar.getCalendar(year, month)
+	const prodCalendar = calendar.getMonth(year, month)
 	const momentMonth = Moment([year, month - 1])
 	const monthStartsInDayOfWeek = parseInt(startOfMonth(momentMonth.clone()).format("d"), 10) - 1
 
 	const calculateWorkingDaysAndHoursInMonth = (): WorkingType => {
 		const summary = _.countBy(prodCalendar)
 		return {
-			days: prodCalendar.length - summary[DAY_HOLIDAY],
-			hours: summary[DAY_WORK] * HOURS_IN_STANDARD_DAY + (summary[DAY_WORK_REDUCED] || 0) * HOURS_IN_REDUCED_DAY
+			days: prodCalendar.length - summary[Calendar.DAY_HOLIDAY],
+			hours: summary[Calendar.DAY_WORK] * HOURS_IN_STANDARD_DAY + (summary[Calendar.DAY_WORK_REDUCED] || 0) * HOURS_IN_REDUCED_DAY
 		}
 	}
 
