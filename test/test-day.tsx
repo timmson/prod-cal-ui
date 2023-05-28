@@ -1,5 +1,6 @@
 import React from "react"
 import {render, screen} from "@testing-library/react"
+import "@testing-library/jest-dom"
 
 import Day from "../src/day"
 
@@ -17,8 +18,8 @@ describe("Day should", () => {
 		</table>
 		)
 
-		//expect(screen.getByText("1")).toBeInDocument()
-		expect(screen.getByText("1")).toBeDefined()
+		expect(screen.getByText(d.date)).toBeInTheDocument()
+		expect(screen.getByText(d.date)).toHaveClass(d.type)
 	})
 
 })

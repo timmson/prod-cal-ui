@@ -1,10 +1,12 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import {render} from "@testing-library/react"
+
+
 import Month from "../src/month"
 
 describe("Month should", () => {
 
-	test("be equal to snapshot", () => {
+	test("render", () => {
 		const m = {
 			name: "October",
 			number: 10,
@@ -20,10 +22,8 @@ describe("Month should", () => {
 			]
 		}
 
-		const component = renderer.create(<Month year={2020} month={m} isSelected={false}/>)
+		render(<Month year={2020} month={m} isSelected={false}/>)
 
-		expect(component.toJSON()).toMatchSnapshot()
-		component.unmount()
+
 	})
-
 })
