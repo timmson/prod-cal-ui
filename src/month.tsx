@@ -25,7 +25,7 @@ export default function Month(props: MonthProps) {
 			<table className={`calendar ${props.isSelected ? "calendar-focused" : ""}`} onClick={setFocus}>
 				<thead>
 					<tr>
-						<td className="month" colSpan="8">
+						<td className="month" colSpan={8}>
 							{props.month.name}&apos;{props.year % 100} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span>
 						</td>
 					</tr>

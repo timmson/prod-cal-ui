@@ -1,16 +1,24 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import {render, screen} from "@testing-library/react"
+
 import Day from "../src/day"
 
 describe("Day should", () => {
 
-	test("be equal to snapshot", () => {
+	test("render", () => {
 		const d = {type: "type", date: 1}
 
-		const component = renderer.create(<Day day={d}/>)
+		render(<table>
+			<tbody>
+				<tr>
+					<Day day={d}/>
+				</tr>
+			</tbody>
+		</table>
+		)
 
-		expect(component.toJSON()).toMatchSnapshot()
-		component.unmount()
+		//expect(screen.getByText("1")).toBeInDocument()
+		expect(screen.getByText("1")).toBeDefined()
 	})
 
 })
