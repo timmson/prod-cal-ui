@@ -12,7 +12,7 @@ exports[`Month should be equal to snapshot 1`] = `
       <tr>
         <td
           className="month"
-          colSpan="8"
+          colSpan={8}
         >
           October
           '

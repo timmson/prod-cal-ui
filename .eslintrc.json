@@ -31,10 +31,6 @@
 			"error",
 			"smart-tabs"
 		],
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
 		"quotes": [
 			"error",
 			"double"
