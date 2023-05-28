@@ -32,6 +32,7 @@ jobs:
         CI: true
 
     - name: Commit files
+      if: github.ref != 'refs/heads/main'
       run: |
         git config --local user.email "prod-cal-ui[bot]@users.noreply.github.com"
         git config --local user.name "prod-cal-ui[bot]"
