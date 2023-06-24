@@ -6,9 +6,6 @@ import Month from "./month"
 import GenerateYear from "./generate-year"
 import {RequestType, StateType} from "./types"
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faArrowAltCircleLeft, faArrowAltCircleRight} from "@fortawesome/free-regular-svg-icons"
-
 type AppProps = {
     request: RequestType
     notify: (state: StateType) => void
@@ -25,9 +22,9 @@ const App = (props: AppProps) => {
 		<Context.Provider value={dispatch}>
 			<div className="row ml-2">
 				<div className="col mt-4 text-center">
-					<FontAwesomeIcon icon={faArrowAltCircleLeft} className={"m-2 fs-1 clickable"} onClick={() => changeYear(-1)}/>
-					<span className="fs-1">{state.year}</span>
-					<FontAwesomeIcon icon={faArrowAltCircleRight} className={"m-2 fs-1 clickable"} onClick={() => changeYear(+1)}/>
+					<span className={"arrows"} onClick={() => changeYear(-1)}>&lt;</span>
+					{state.year}
+					<span className={"arrows"} onClick={() => changeYear(+1)}>&gt;</span>
 				</div>
 			</div>
 			<div className="row ml-2">
