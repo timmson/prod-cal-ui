@@ -24,6 +24,5 @@ describe("Month should", () => {
 
 		render(<Month year={2020} month={m} isSelected={false}/>)
 
-
 	})
 })

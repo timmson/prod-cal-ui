@@ -1,8 +1,9 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 html, body {
-  font-size: 16pt;
+  font-size: 18pt;
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -11,40 +12,48 @@ html, body {
   }
 }
 
-.clickable {
+.arrows {
+  color: #00AFFF;
+  font-weight: bold;
+  margin: 20px;
   cursor: pointer;
+}
+
+div.month {
+
+  top: 28px;
+  left: 75px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 2;
+
+  span {
+    font-size: small;
+  }
 }
 
 .calendar {
 
-  border: 3px #ccc solid;
   min-width: 400px;
   width: 100%;
 
   tr.dayOfWeek td {
-    background-color: #ccc;
+    border: 0;
   }
 
   td {
     width: 12.5%;
     text-align: center;
-    border: 1px solid gray;
-    background-color: #eee;
-  }
-
-  td.month {
-    background-color: #aaa;
-    font-weight: bold;
-
-    span {
-      font-size: smaller;
-      font-weight: normal;
-    }
+    border-top: 1px #ccc solid;
   }
 
   td.weekNum {
-    color: cornflowerblue;
-    font-style: italic;
+    border: 0;
+    color: #929292;
+    font-size: smaller;
   }
 
   td.work {
@@ -52,8 +61,7 @@ html, body {
   }
 
   td.holiday {
-    font-weight: bold;
-    color: red;
+    color: #FF0000;
   }
 
   td.work_reduced {
@@ -61,10 +69,10 @@ html, body {
   }
 
   td.inactive {
-    color: darkgray;
+    color: #4A4A4A;
   }
 }
 
 .calendar-focused {
-  border: 3px #f00 solid;
+  border: 2px #FF0000 solid;
 }

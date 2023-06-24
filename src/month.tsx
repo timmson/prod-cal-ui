@@ -6,10 +6,10 @@ import Week from "./week"
 import {MonthType} from "./types"
 
 type MonthProps = {
-	key?: number
-	year: number
-	month: MonthType
-	isSelected: boolean
+    key?: number
+    year: number
+    month: MonthType
+    isSelected: boolean
 }
 
 export default function Month(props: MonthProps) {
@@ -18,32 +18,30 @@ export default function Month(props: MonthProps) {
 	const setFocus = () => dispatch({type: CHANGE_MONTH, value: props.month.number})
 	const myRef = useRef(null)
 
-	useEffect(() => props.isSelected ? myRef.current.scrollIntoView() : null, [myRef])
+	useEffect(() => {
+		props.isSelected ? myRef.current.scrollIntoView() : null
+	}, [myRef])
 
 	return (
-		<div ref={myRef} className="col float-right mt-4">
-			<table className={`calendar ${props.isSelected ? "calendar-focused" : ""}`} onClick={setFocus}>
-				<thead>
-					<tr>
-						<td className="month" colSpan={8}>
-							{props.month.name}&apos;{props.year % 100} - <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span>
-						</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr className="dayOfWeek">
-						<td className="work">#w</td>
-						<td className="work">mo</td>
-						<td className="work">tu</td>
-						<td className="work">we</td>
-						<td className="work">th</td>
-						<td className="work">fr</td>
-						<td className="holiday">sa</td>
-						<td className="holiday">su</td>
-					</tr>
-					{props.month.weeks.map((week) => <Week key={week.number} week={week}/>)}
-				</tbody>
-			</table>
+		<div ref={myRef} className={"col float-right"}>
+			<div className={"month"}>{props.month.name} <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span></div>
+			<div className={`m-2 border ${props.isSelected ? "border-danger" : "border-secondary"} rounded`} style={{paddingTop: "15px"}}>
+				<table className={"calendar"} onClick={setFocus}>
+					<tbody>
+						<tr className="dayOfWeek">
+							<td className="work">&nbsp;</td>
+							<td className="work">Mo</td>
+							<td className="work">Tu</td>
+							<td className="work">We</td>
+							<td className="work">Th</td>
+							<td className="work">Fr</td>
+							<td className="holiday">Sa</td>
+							<td className="holiday">Su</td>
+						</tr>
+						{props.month.weeks.map((week) => <Week key={week.number} week={week}/>)}
+					</tbody>
+				</table>
+			</div>
 		</div>
 	)
 }
