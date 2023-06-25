@@ -24,7 +24,7 @@ export default function Month(props: MonthProps) {
 
 	return (
 		<div ref={myRef} className={"col float-right"}>
-			<div className={"month"}>{props.month.name} <span>[working {props.month.working.days}d /{props.month.working.hours}h]</span></div>
+			<div className={"month"}>{props.month.name}&nbsp;<sup>{props.month.working.days}d /{props.month.working.hours}h</sup></div>
 			<div className={`m-2 border ${props.isSelected ? "border-danger" : "border-secondary"} rounded`} style={{paddingTop: "15px"}}>
 				<table className={"calendar"} onClick={setFocus}>
 					<tbody>

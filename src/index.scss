@@ -1,15 +1,14 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+$font-size: 36pt !default;
+$font-size-small: 20pt !default;
+$month-top: 55px !default;
+$month-left: 180px !default;
+
 html, body {
-  font-size: 18pt;
+  font-size: $font-size;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) {
-  html, body {
-    font-size: 36pt;
-  }
 }
 
 .arrows {
@@ -21,8 +20,8 @@ html, body {
 
 div.month {
 
-  top: 28px;
-  left: 75px;
+  top: $month-top;
+  left: $month-left;
   background: #fff;
   position: relative;
   display: inline-block;
@@ -30,8 +29,28 @@ div.month {
   padding-right: 5px;
   z-index: 2;
 
-  span {
-    font-size: small;
+  sup {
+    font-size: $font-size-small;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  $font-size: 18pt;
+  $font-size-small: 10pt;
+  $month-top: 28px;
+  $month-left: 75px;
+
+  html, body {
+    font-size: $font-size;
+  }
+
+  div.month {
+    top: $month-top;
+    left: $month-left;
+
+    sup {
+      font-size: $font-size-small;
+    }
   }
 }
 
@@ -76,3 +95,4 @@ div.month {
 .calendar-focused {
   border: 2px #FF0000 solid;
 }
+
