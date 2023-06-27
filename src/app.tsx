@@ -21,7 +21,7 @@ const App = (props: AppProps) => {
 	return (
 		<Context.Provider value={dispatch}>
 			<div className="row ml-2">
-				<div className="col mt-4 text-center">
+				<div className="col mt-4 text-center year">
 					<span className={"arrows"} onClick={() => changeYear(-1)}>&lt;</span>
 					{state.year}
 					<span className={"arrows"} onClick={() => changeYear(+1)}>&gt;</span>

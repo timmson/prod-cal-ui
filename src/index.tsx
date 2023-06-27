@@ -2,7 +2,7 @@ import "bootstrap"
 import "./index.scss"
 
 import React from "react"
-import ReactDOM from "react-dom"
+import {createRoot} from "react-dom/client"
 
 import App from "./app"
 import Moment from "moment"
@@ -27,7 +27,9 @@ const shareUrl = () => {
 	window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}`, "blank")
 }
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("app"))
+
+root.render(
 	<>
 		<App request={request} notify={notify}/>
 		<div className="row mt-5">
@@ -39,5 +41,5 @@ ReactDOM.render(
 			</div>
 			<div className="col-sm-1">&nbsp;</div>
 		</div>
-	</>,
-	document.getElementById("app"))
+	</>
+)

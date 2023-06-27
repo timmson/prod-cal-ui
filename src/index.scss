@@ -11,12 +11,16 @@ html, body {
   font-family: "Inter", sans-serif;
 }
 
-.arrows {
-  color: #00AFFF;
+div.year {
   font-weight: bold;
-  margin: 20px;
-  cursor: pointer;
+
+  .arrows {
+    color: #00AFFF;
+    margin: 20px;
+    cursor: pointer;
+  }
 }
+
 
 div.month {
 
