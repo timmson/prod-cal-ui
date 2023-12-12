@@ -1,6 +1,6 @@
 {
   "name": "prod-cal-ui",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Web UI for prod-cal",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "bootstrap": "^5.3.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "prod-cal": "^2.0.3",
+    "prod-cal": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -20,9 +20,9 @@
     "@babel/preset-env": "^7.23.5",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
-    "@types/jest": "^29.5.10",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.10",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "babel-loader": "^9.1.3",
     "babel-polyfill": "^6.26.0",
