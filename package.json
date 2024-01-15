@@ -11,7 +11,7 @@
     "bootstrap": "^5.3.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "prod-cal": "^3.0.1",
+    "prod-cal": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -40,7 +40,7 @@
     "typescript": "^5.3.2",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^5."
   },
   "scripts": {
     "lint": "npx eslint ./src ./test --fix",

@@ -14,12 +14,14 @@ const currentYear = new Date().getFullYear()
 const params = new URL(window.location.href).searchParams
 const request = {
 	year: parseInt(params.get("year") || Moment().format("YYYY"), 10),
-	month: parseInt(params.get("month") || Moment().format("M"), 10)
+	month: parseInt(params.get("month") || Moment().format("M"), 10),
+	deep: parseInt(params.get("deep") || "0", 10)
 }
 
 const notify = (state: StateType) => {
 	params.set("year", state.year.toString())
 	params.set("month", state.month.toString())
+	params.set("deep", state.deep.toString())
 	window.history.replaceState({}, "Production Calendar", "?" + params.toString())
 }
 

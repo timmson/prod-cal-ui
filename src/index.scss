@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+$font-size-big: 48pt !default;
 $font-size: 36pt !default;
 $font-size-small: 20pt !default;
 $month-top: 55px !default;
@@ -13,12 +14,7 @@ html, body {
 
 div.year {
   font-weight: bold;
-
-  .arrows {
-    color: #00AFFF;
-    margin: 20px;
-    cursor: pointer;
-  }
+  font-size: $font-size-big;
 }
 
 
@@ -39,6 +35,7 @@ div.month {
 }
 
 @media screen and (min-width: 1000px) {
+  $font-size-big: 22pt;
   $font-size: 18pt;
   $font-size-small: 10pt;
   $month-top: 28px;

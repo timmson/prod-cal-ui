@@ -1,2 +1,2 @@
 export const CHANGE_MONTH = "CHANGE_MONTH"
-export const CHANGE_YEAR = "CHANGE_YEAR"
+export const ADD_YEAR = "ADD_YEAR"

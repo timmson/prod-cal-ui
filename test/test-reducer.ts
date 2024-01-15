@@ -1,5 +1,5 @@
 import Reducer from "../src/reducer"
-import {CHANGE_MONTH, CHANGE_YEAR} from "../src/actions"
+import {ADD_YEAR} from "../src/actions"
 
 const getTestCaseDescription = (t, i) =>
 	`# ${i} - ${JSON.stringify(t.action)} when state:${JSON.stringify(t.state)} and return:${JSON.stringify(t.expected)}`
@@ -13,14 +13,9 @@ describe("Reducer should", () => {
 			expected: {}
 		},
 		{
-			state: {year: 1, month: 1},
-			action: {type: CHANGE_MONTH, value: 2},
-			expected: {year: 1, month: 2}
-		},
-		{
-			action: {type: CHANGE_YEAR, value: 2},
-			state: {year: 1, month: 1},
-			expected: {year: 2, month: 1}
+			action: {type: ADD_YEAR},
+			state: {deep: 0, year: 1, month: 1},
+			expected: {deep: 1, year: 1, month: 1}
 		}
 	].map((t, i) => {
 		test(getTestCaseDescription(t, i), () => {

@@ -1,6 +1,4 @@
-import React, {useContext, useEffect, useRef} from "react"
-import {CHANGE_MONTH} from "./actions"
-import Context from "./context"
+import React, {useEffect, useRef} from "react"
 
 import Week from "./week"
 import {MonthType} from "./types"
@@ -14,8 +12,6 @@ type MonthProps = {
 
 export default function Month(props: MonthProps) {
 
-	const dispatch = useContext(Context)
-	const setFocus = () => dispatch({type: CHANGE_MONTH, value: props.month.number})
 	const myRef = useRef(null)
 
 	useEffect(() => {
@@ -26,7 +22,7 @@ export default function Month(props: MonthProps) {
 		<div ref={myRef} className={"col float-right"}>
 			<div className={"month"}>{props.month.name}&nbsp;<sup>{props.month.working.days}d /{props.month.working.hours}h</sup></div>
 			<div className={`m-2 border ${props.isSelected ? "border-danger" : "border-secondary"} rounded`} style={{paddingTop: "15px"}}>
-				<table className={"calendar"} onClick={setFocus}>
+				<table className={"calendar"}>
 					<tbody>
 						<tr className="dayOfWeek">
 							<td className="work">&nbsp;</td>

@@ -6,6 +6,7 @@ export type ActionType = {
 export type StateType = {
     month?: number
     year?: number
+    deep?: number
 }
 
 export type RequestType = {
