@@ -43,7 +43,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
-    "lint": "npx eslint ./src ./test --fix",
+    "lint": "npx eslint ./src ./test --fix ",
     "test": "npx jest",
     "coverage": "npx jest --collectCoverage",
     "watch": "npx webpack --mode development --watch",
