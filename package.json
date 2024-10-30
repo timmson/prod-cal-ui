@@ -1,6 +1,6 @@
 {
   "name": "prod-cal-ui",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Web UI for prod-cal",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "bootstrap": "^5.3.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "prod-cal": "^3.0.7",
+    "prod-cal": "^3.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
