@@ -28,7 +28,14 @@ module.exports = {
 				use: [
 					MiniCssExtractPlugin.loader,
 					"css-loader",
-					"sass-loader"
+					{
+						loader: "sass-loader",
+						options: {
+							// Bootstrap still relies on deprecated SASS color/`if()` helpers;
+							// quietDeps keeps those dependency-only warnings out of the dev overlay.
+							sassOptions: {quietDeps: true}
+						}
+					}
 				]
 			}
 		]

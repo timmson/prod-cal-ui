@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap.scss";
+@use "bootstrap/scss/bootstrap" as *;
 
 $font-size-big: 48pt !default;
 $font-size: 36pt !default;
